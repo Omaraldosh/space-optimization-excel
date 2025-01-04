@@ -63,3 +63,72 @@ As shown in the image, the blank values in the "people present" column were corr
 
 
 Now, with the transformations applied, the dataset is cleaner, with missing values addressed according to the specified rules. This prepares the data for further analysis and reporting.
+
+After preparing and transforming the data in the Power Query Editor, I loaded the dataset using the Close and Load option under the Home tab.
+
+Here’s an illustration of the step in the Power Query Editor:
+<img width="814" alt="Screenshot 2025-01-04 191814" src="https://github.com/user-attachments/assets/6c1d0041-46c7-4c6d-b9e3-927e93c06aaa" />
+
+
+## Data Enhancement with Logical Columns
+After loading the transformed data into Excel, I created a new column using an IF Statement. The purpose of this step was to simplify the values in the Activity attribute. Specifically:
+
+Goal: Consolidate all values in the Activity column into two categories:
+Occupied: For any activity other than Not Occupied.
+Not Occupied: For entries explicitly labeled as such.
+This categorization ensures actionable insights and more effective visualizations, focusing solely on occupancy trends.
+
+### Formula and Implementation
+Below is an example of the formula applied to create the new column:
+<img width="673" alt="Screenshot 2025-01-04 184107" src="https://github.com/user-attachments/assets/49f832f1-08e5-4f47-81d0-ae5747bef28e" />
+
+
+
+### Final Outcome
+Once the formula was applied, the resulting column successfully categorized the Activity data:
+<img width="565" alt="Screenshot 2025-01-04 184423" src="https://github.com/user-attachments/assets/70d3eb13-d08b-40d2-8c98-b35d94eb807d" />
+
+
+## Integration into Pivot Table
+The newly created column was automatically added as a new attribute in the Pivot Table, allowing for dynamic analysis of the Activity data.
+
+By integrating the new Activity column, the Pivot Table now provides a streamlined view of occupancy trends, categorized into Occupied and Not Occupied. Here's how the column appears in the field list of the Pivot Table:
+
+<img width="290" alt="Screenshot 2025-01-04 184558" src="https://github.com/user-attachments/assets/4e0ede01-f88e-4afb-a45a-99bf595b1e43" />
+
+
+Benefits
+Actionable Insights: Quickly analyze and compare the occupancy rates.
+
+Efficiency: Focus on key patterns with simplified categories.
+
+Flexibility: Use the pivot table’s dynamic filtering and sorting options for custom insights.
+
+
+
+## Visualizations and Insights
+### Question: During Which Time Periods Are Spaces Most Occupied?
+With the cleaned and prepared dataset, I created a visualization to explore occupancy patterns across different time periods. This visualization highlights when spaces are most and least utilized, providing valuable insights for optimizing space usage.
+
+### Findings:
+Most Occupied Period:
+13:00 - 14:00 shows the highest occupancy.
+Least Occupied Periods:
+08:45 - 10:15 and 16:30 - 18:00 have the lowest occupancy rates.
+### Visualization:
+Below is the chart demonstrating these occupancy patterns:
+<img width="938" alt="Screenshot 2025-01-04 191910" src="https://github.com/user-attachments/assets/dab4253a-2733-4354-9407-ae403a0746e2" />
+
+
+### Impact:
+Planning Efficiency: Insights can help allocate resources effectively and schedule activities during peak usage times.
+
+Optimization: Identify underutilized spaces for potential repurposing during off-peak hours
+
+
+
+
+
+
+
+
