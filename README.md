@@ -81,6 +81,60 @@ This made analysis much simpler and more straightforward. 🎯
    <img width="565" alt="Screenshot 2025-01-04 184423" src="https://github.com/user-attachments/assets/70d3eb13-d08b-40d2-8c98-b35d94eb807d" />
 ---
 
+
+## 🔍 **Low Occupied Spaces Analysis**
+
+I identified low occupied **spaces** by using **Pivot Tables** and the **Show % of Parent Row Total** functionality. This ensured the percentage for each space was calculated independently and not affected by others. According to the client, spaces with occupancy percentages of **16% and lower** are considered low occupied.
+
+### 🗊 **Steps Taken:**
+1. Generated a Pivot Table to calculate occupancy percentages by space.
+2. Applied the **"% of Parent Row Total"** option to reflect individual space utilization.
+
+**Example Screenshot:**
+
+<img width="160" alt="image" src="https://github.com/user-attachments/assets/11a17efc-d501-4cb8-874a-b55f4429b804" />
+
+
+
+3. Identified spaces with occupancy percentages **≤16%** and copied them to separate sheets.
+4. Organized each sheet by:
+   - **Campus/Compartment**
+   - **Floor**
+  <img width="842" alt="image" src="https://github.com/user-attachments/assets/96046e6a-d43e-4bce-bb80-39c9b3441a78" />
+
+### 🗊 **Why Listing is Effective**
+Listing low-occupied spaces provides several benefits:
+- **Clear and Straightforward**: Offers a precise view without needing to interpret charts.
+- **Actionable Insight**: Makes it easier to identify and prioritize specific areas for improvement.
+- **Flexible for Stakeholders**: Stakeholders can use the list to analyze data in ways that suit their unique needs.
+   
+
+### 🕵️ **Reasoning for Separation**
+- Each sheet simplifies identifying patterns within campuses and floors.
+- Facilitates tailored actions for improving utilization in specific areas.
+- Allows stakeholders to focus on critical underutilized spaces.
+
+
+
+## 🔍 **Low Occupied Space Types Analysis**
+
+Similarly, I identified low occupied **space types** using **Pivot Tables** with the **Show % of Parent Row Total** feature to ensure independent calculations for each space type.
+
+### 🗊 **Steps Taken:**
+1. Generated a Pivot Table to calculate occupancy percentages by space type.
+2. Applied the **"% of Parent Row Total"** option to reflect individual space type utilization.
+
+**Example Screenshot:**
+
+ <img width="245" alt="image" src="https://github.com/user-attachments/assets/62629838-57f3-44c5-9ad2-bb9d5ee50347" />
+
+
+3. Identified space types with occupancy percentages **≤16%** and copied them into a new sheet.
+4. Organized each sheet by:
+   - **Campus**
+     
+     <img width="625" alt="image" src="https://github.com/user-attachments/assets/2fcef479-4b51-46c5-9d2e-7e37428364df" />
+
 ## 🔍 **Key Insights and Visualizations**
 
 ### 📅 **Occupancy Across Time Periods**
@@ -88,7 +142,8 @@ I analyzed which hours had the highest and lowest occupancy:
 - **Most Occupied Period**: 13:00 - 14:00 🕐💼
 - **Least Occupied Period**: 08:45 - 10:15 & 16:30 - 18:00 🕓🕔
 
-<img width="938" alt="Screenshot 2025-01-04 191910" src="https://github.com/user-attachments/assets/dab4253a-2733-4354-9407-ae403a0746e2" />
+<img width="725" alt="image" src="https://github.com/user-attachments/assets/35f4dcae-eeed-4a74-a06e-97e3e0e8767b" />
+
 
 ### 💡 **Impact:**
 - Understanding these times helps allocate resources efficiently. 🌍
@@ -98,7 +153,7 @@ I analyzed which hours had the highest and lowest occupancy:
 I compared the number of people present to the **room capacity** to analyze whether spaces are being underutilized:
 - **Underutilization:** Capacity often exceeds occupancy by more than 50%! 📊❗
 
-<img width="925" alt="image" src="https://github.com/user-attachments/assets/81599954-0821-4a1b-9732-8a2f4a97e5e2" />
+<img width="567" alt="image" src="https://github.com/user-attachments/assets/db7cd0fb-74e4-46e2-a44d-713d029c214f" />
 
 ### 📉 **Impact:**
 - Optimizing underused spaces for **better resource allocation**. 🔄
@@ -108,7 +163,8 @@ I compared the number of people present to the **room capacity** to analyze whet
   - **Delft Campus** 🌍: 42% occupancy 📈
   - **Delft Beta Factory** 🏢: 30% occupancy 📉
 
-<img width="902" alt="image" src="https://github.com/user-attachments/assets/720d3da2-6e0f-4796-b514-3e0d044c74d2" />
+<img width="566" alt="image" src="https://github.com/user-attachments/assets/cb64ef73-d000-4033-bda5-36f45ddf9e63" />
+
 
 ### 📅 **Impact:**
 - Useful for **campus planning**: Space allocation based on **actual demand**.
@@ -118,7 +174,8 @@ The study revealed interesting trends based on weekdays:
 - **Monday, Tuesday, Thursday** 📅: High occupancy.
 - **Friday** 🗓️: Low occupancy, meaning rooms might be underused on that day.
 
-<img width="890" alt="image" src="https://github.com/user-attachments/assets/5bf1818e-19fe-41ce-b18f-9a9308af4855" />
+<img width="722" alt="image" src="https://github.com/user-attachments/assets/6e057f43-efed-4c88-bb21-5f216ac85805" />
+
 
 ### 📅 **Impact:**
 - This data can help tweak **class schedules** or explore activities suited for lower occupancy days. 🔄
@@ -143,4 +200,4 @@ The study revealed interesting trends based on weekdays:
 ### 🌟 **Conclusion**
 This project provided actionable insights into space optimization, leading to better resource planning and potentially improving sustainability. It also demonstrates how using **Excel** and **Power Query** can streamline data management processes. ⚡
 
-💬 Feel free to explore the code and visualizations to dive deeper into the world of data-driven space planning! 🌍📊
+
